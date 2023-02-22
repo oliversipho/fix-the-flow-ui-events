@@ -10,7 +10,17 @@
 }
 * {
   box-sizing: border-box;
+
+
+
 }
+
+html {
+  display: block;
+}
+
+
+
 body {
   margin: 2rem;
   padding: 0;
@@ -79,3 +89,257 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+/* Frontend */
+/* ------------- */
+.rotate {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  /* animation-timing-function: linear; */
+}
+
+hover{
+  animation-name: rotate;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* -------------------- */
+/* Design */
+/* ------------------- */
+.increasing {
+  animation-name: increasing;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes increasing {
+25% {
+  transform: scale(0.7, 0.7);
+}
+
+50% {
+  transform: scale(1, 1);
+}
+
+75% {
+  transform: scale(0.7, 0.7);
+}
+
+100% {
+  transform: scale(1, 1);
+}
+}
+/* ---------------- */
+/* & */
+/* ----------------- */
+.button3CssAnimatie {
+  animation-name: button3CssAnimatie;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes button3CssAnimatie {
+20% {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+40% {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+60% {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+80% {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+100% {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+}
+/* ------------------ */
+/* Development */
+/* ----------------- */
+.swing {
+  animation-name: swing;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes swing {
+  25% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+/* ------- */
+/* Sprint 5 */
+/* -------- */
+
+.rainbow {
+  animation-name: rainbow;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rainbow {
+  10% {
+    background-color: #ef0000;
+  }
+  20% {
+    background-color: #7ce7c9;
+  }
+  30%{
+    background-color: #9d7beb;
+  }
+  40% { 
+    background-color: red;
+  }
+  50% {
+    background-color: chartreuse;
+  }
+  60% {
+    background-color: darkorchid;
+  }
+  70% {
+    background-color: darkorange;
+  }
+  80%{
+    background-color: cyan;
+  }
+  90% {
+    background-color: hotpink;
+  }
+  100% {
+    background-color: navy;
+  }
+}
+
+/* --- */
+/* Fix  */
+/* --- */
+
+.blur {
+  filter: blur(3px);
+}
+
+/* --- */
+/* The */
+/* --- */
+.fading {
+  animation: fading;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fading {
+  50% {
+    filter: blur(50px);
+
+  }
+  
+}
+
+/* --- */
+/* Flow */
+/* --- */
+
+.strobe {
+  animation: strobe 5ms steps(1,end) infinite;
+}
+
+@keyframes strobe {
+  50% { background:rgb(255, 255, 255); color:white; }
+}
+
+/* --- */
+/* User */
+/* --- */
+
+ .changeBackGround {
+background-color: red;}
+
+ .changeBackGround {
+  animation: changeBackGround;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+} 
+
+@keyframes changeBackGround {
+
+  40% {
+    background-color: red;
+  }
+} 
+
+ /* --- */
+ /* Interface */
+ /* --- */
+.flip {
+  animation-name: flip;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 2.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes flip {
+  0% {
+    transform: scale(1, 1) translateY(0) ;
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-5rem) rotate(60deg);
+  }
+  35%{
+    transform: scale(0.9, 1.1) translateY(-5rem) rotate(130deg);
+
+  }
+  40%{
+    transform: scale(0.9, 1.1) translateY(-5rem) rotate(190deg);
+
+  }
+  45%{
+    transform: scale(0.9, 1.1) translateY(-5rem) rotate(250deg);
+
+  }
+  50%{
+    transform: scale(0.9, 1.1) translateY(-5rem) rotate(310deg);
+
+  }
+  57% {
+    transform: scale(1, 1) translateY(-0.5rem) rotate(360deg);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0) rotate(360deg);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0) rotate(360deg);
+  }
+}
+
+/* --- */
